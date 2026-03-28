@@ -13,7 +13,6 @@
         .animate-pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
         
-        /* Estilo extra para el botón de CV */
         .btn-cv {
             background: linear-gradient(to r, #3b82f6, #10b981);
             padding: 2px;
@@ -34,7 +33,7 @@
             
             <div class="flex justify-center md:justify-end">
                 <img src="Adrián Ramos Torralba.png" alt="Adrián Ramos Torralba" class="w-48 h-48 rounded-full object-cover border-4 border-slate-700 shadow-xl">
-                </div>
+            </div>
 
             <div class="md:col-span-2 space-y-4">
                 <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
@@ -42,6 +41,15 @@
                 </h1>
                 <p class="text-xl md:text-2xl text-slate-400">AI & Software Engineer | Java · Python</p>
                 
+                <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-slate-400 text-sm font-medium">
+                    <a href="https://www.google.com/maps/search/Valdemorillo,+Madrid" target="_blank" class="flex items-center hover:text-emerald-400 transition">
+                        <i class="fas fa-map-marker-alt mr-2 text-emerald-400"></i>Valdemorillo, Madrid
+                    </a>
+                    <a href="tel:+34662437505" class="flex items-center hover:text-blue-400 transition">
+                        <i class="fas fa-phone-alt mr-2 text-blue-400"></i>+34 662 437 505
+                    </a>
+                </div>
+
                 <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
                     <a href="https://linkedin.com/in/adrián-ramos-torralba/" target="_blank" class="bg-blue-600 px-6 py-2 rounded-full hover:bg-blue-500 transition shadow-lg flex items-center h-10">
                         <i class="fab fa-linkedin mr-2"></i>LinkedIn
@@ -63,51 +71,136 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-6 space-y-20 pb-20">
+        
+        <section class="glass p-8 rounded-3xl border-l-4 border-emerald-500 shadow-2xl">
+            <h2 class="text-xl font-bold mb-4 text-emerald-400 uppercase tracking-wider flex items-center">
+                <i class="fas fa-user-astronaut mr-3"></i> About Me
+            </h2>
+            <div class="text-slate-300 leading-relaxed space-y-4 text-lg">
+                <p>
+                    I am an <strong>AI & Software Engineer</strong> specialized in building the next generation of intelligent systems. My focus lies at the intersection of robust Backend Engineering and cutting-edge Artificial Intelligence.
+                </p>
+                <p>
+                    I architect <strong>autonomous agentic workflows</strong> using <strong>LangGraph</strong> and <strong>LangChain</strong>, and develop high-performance RAG microservices with <strong>FastAPI</strong>. My engineering foundation is built on <strong>Java, Spring Boot</strong>, and <strong>Hexagonal Architecture</strong>, ensuring scalability and production-ready quality.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
+                <i class="fas fa-briefcase mr-3 text-blue-400"></i> Professional Experience
+            </h2>
+            
+            <div class="space-y-8">
+                <div class="glass p-8 rounded-2xl border-l-4 border-blue-500">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">AI & Software Engineer</h3>
+                            <p class="text-blue-400 font-semibold text-lg">Globant · Iberia Project</p>
+                        </div>
+                        <span class="text-slate-400 font-mono text-sm bg-slate-800 px-3 py-1 rounded-full mt-2 md:mt-0">Apr 2025 - Present</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-emerald-500 mt-1.5 mr-3 text-xs"></i><span>Design and implement advanced <strong>agentic workflows</strong> (LangChain/LangGraph).</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-emerald-500 mt-1.5 mr-3 text-xs"></i><span>Architect <strong>RAG systems</strong> and microservices with <strong>FastAPI</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-emerald-500 mt-1.5 mr-3 text-xs"></i><span>Develop backend services with <strong>Java</strong> and <strong>Spring Boot</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-emerald-500 mt-1.5 mr-3 text-xs"></i><span>Lead deployment strategies using <strong>Docker</strong> and <strong>AWS</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-emerald-500 mt-1.5 mr-3 text-xs"></i><span>Manage <strong>MySQL</strong> databases for AI-driven applications.</span></li>
+                    </ul>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-slate-500 opacity-90 text-sm md:text-base">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Full-Stack Developer</h3>
+                            <p class="text-slate-400 font-semibold text-lg">Director11</p>
+                        </div>
+                        <span class="text-slate-400 font-mono text-sm bg-slate-800 px-3 py-1 rounded-full mt-2 md:mt-0">Jun 2024 - Mar 2025</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-slate-500 mt-1.5 mr-3 text-xs"></i><span>Develop backend services using <strong>Java, Spring</strong>, and <strong>REST APIs</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-slate-500 mt-1.5 mr-3 text-xs"></i><span>Optimize database performance via <strong>SQL</strong> and <strong>Hibernate</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-slate-500 mt-1.5 mr-3 text-xs"></i><span>Modernize UIs with <strong>ZK Framework</strong>.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
+                <i class="fas fa-graduation-cap mr-3 text-emerald-400"></i> Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-6 rounded-2xl border-t-2 border-emerald-500">
+                    <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">Bachelor's Degree</span>
+                    <h3 class="text-xl font-bold mt-1">Computer Science Engineering</h3>
+                    <p class="text-slate-400">Universidad Alfonso X el Sabio</p>
+                    <p class="text-sm text-slate-500 mt-2">2024 — 2028 (Expected)</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-emerald-500/10 text-emerald-400 text-[10px] px-2 py-1 rounded border border-emerald-500/20">Software Development</span>
+                        <span class="bg-emerald-500/10 text-emerald-400 text-[10px] px-2 py-1 rounded border border-emerald-500/20">Artificial Intelligence</span>
+                    </div>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border-t-2 border-blue-500">
+                    <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">Advanced Vocational Training (HND)</span>
+                    <h3 class="text-xl font-bold mt-1">Multi-platform App Development (DAM)</h3>
+                    <p class="text-slate-400">IES Las Encinas</p>
+                    <p class="text-sm text-slate-500 mt-2">2022 — 2024</p>
+                    <div class="mt-4 flex flex-wrap gap-1.5">
+                        <span class="bg-blue-500/10 text-blue-400 text-[9px] px-2 py-0.5 rounded border border-blue-500/20">SpringBoot</span>
+                        <span class="bg-blue-500/10 text-blue-400 text-[9px] px-2 py-0.5 rounded border border-blue-500/20">Android</span>
+                        <span class="bg-blue-500/10 text-blue-400 text-[9px] px-2 py-0.5 rounded border border-blue-500/20">OOP</span>
+                        <span class="bg-blue-500/10 text-blue-400 text-[9px] px-2 py-0.5 rounded border border-blue-500/20">Docker</span>
+                    </div>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border-t-2 border-slate-600">
+                    <span class="text-xs font-mono text-slate-400 uppercase tracking-widest">High School</span>
+                    <h3 class="text-xl font-bold mt-1">Technological Sciences</h3>
+                    <p class="text-slate-400">IES Valmayor</p>
+                    <p class="text-sm text-slate-500 mt-2">2019 — 2022</p>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2">Technical Stack</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <div class="glass p-6 rounded-xl tech-card border-l-4 border-blue-500">
-                    <h3 class="text-blue-400 font-bold mb-3 flex items-center">
-                        <i class="fas fa-robot mr-2"></i>AI & Automation
-                    </h3>
+                    <h3 class="text-blue-400 font-bold mb-3 flex items-center"><i class="fas fa-robot mr-2"></i>AI & Automation</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
                         <li><strong>Python:</strong> LangChain & LangGraph.</li>
-                        <li><strong>Architectures:</strong> RAG & Agentic Workflows.</li>
-                        <li><strong>Serving:</strong> FastAPI & LLM Integration.</li>
+                        <li><strong>Architectures:</strong> RAG & Agentic.</li>
+                        <li><strong>Serving:</strong> FastAPI & LLMs.</li>
                     </ul>
                 </div>
 
                 <div class="glass p-6 rounded-xl tech-card border-l-4 border-emerald-500">
-                    <h3 class="text-emerald-400 font-bold mb-3 flex items-center">
-                        <i class="fas fa-code mr-2"></i>Backend Core
-                    </h3>
+                    <h3 class="text-emerald-400 font-bold mb-3 flex items-center"><i class="fas fa-code mr-2"></i>Backend Core</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
-                        <li><strong>Java:</strong> Spring Boot (17/21) & Maven.</li>
-                        <li><strong>API:</strong> RESTful Services & Postman.</li>
-                        <li><strong>Data:</strong> MySQL, PostgreSQL & Oracle.</li>
+                        <li><strong>Java:</strong> Spring Boot & Hibernate.</li>
+                        <li><strong>API:</strong> REST, <strong>OpenAPI</strong>.</li>
+                        <li><strong>Frameworks:</strong> Maven & ZK.</li>
                     </ul>
                 </div>
 
                 <div class="glass p-6 rounded-xl tech-card border-l-4 border-amber-500">
-                    <h3 class="text-amber-400 font-bold mb-3 flex items-center">
-                        <i class="fas fa-layer-group mr-2"></i>Software Design
-                    </h3>
+                    <h3 class="text-amber-400 font-bold mb-3 flex items-center"><i class="fas fa-database mr-2"></i>Data & SQL</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
-                        <li><strong>Architecture:</strong> Hexagonal & Microservices.</li>
-                        <li><strong>Testing:</strong> Unit & Integration Testing.</li>
-                        <li><strong>Methodology:</strong> SCRUM & Jira.</li>
+                        <li><strong>RDBMS:</strong> MySQL, Postgre, Oracle.</li>
+                        <li><strong>Optimization:</strong> Advanced SQL.</li>
+                        <li><strong>Design:</strong> Hexagonal Arch.</li>
                     </ul>
                 </div>
 
                 <div class="glass p-6 rounded-xl tech-card border-l-4 border-purple-500">
-                    <h3 class="text-purple-400 font-bold mb-3 flex items-center">
-                        <i class="fas fa-cloud mr-2"></i>Cloud & Ops
-                    </h3>
+                    <h3 class="text-purple-400 font-bold mb-3 flex items-center"><i class="fas fa-cloud mr-2"></i>Cloud & Ops</h3>
                     <ul class="text-sm text-slate-300 space-y-2">
-                        <li><strong>Infra:</strong> AWS (Lambda, S3, EC2, ECS).</li>
-                        <li><strong>Containers:</strong> Docker.</li>
-                        <li><strong>Git:</strong> GitHub & CI/CD Pipelines.</li>
+                        <li><strong>Infra:</strong> AWS (EC2, S3, Lambda).</li>
+                        <li><strong>Containers:</strong> Docker & Git.</li>
+                        <li><strong>Agile:</strong> SCRUM & Jira.</li>
                     </ul>
                 </div>
 
@@ -117,9 +210,7 @@
         <section>
             <div class="flex items-center justify-between mb-8 border-b border-slate-700 pb-2">
                 <h2 class="text-2xl font-bold">Featured Projects</h2>
-                <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 animate-pulse-slow font-mono">
-                    Currently Coding...
-                </span>
+                <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 animate-pulse-slow font-mono">Currently Coding...</span>
             </div>
 
             <div class="space-y-12">
@@ -127,30 +218,17 @@
                     <div class="absolute top-0 right-0 p-4">
                         <i class="fas fa-hammer text-slate-700 text-4xl group-hover:text-blue-500/20 transition-colors"></i>
                     </div>
-                    
                     <div class="flex flex-col md:flex-row gap-8">
                         <div class="flex-1">
-                            <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">Agentic Workflow (In Progress)</span>
+                            <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">Agentic Workflow</span>
                             <h3 class="text-3xl font-bold mt-2 mb-4">AI Talent Scout & Job Matcher</h3>
                             <p class="text-slate-300 mb-6 leading-relaxed">
-                                Un sistema inteligente que automatiza la búsqueda de empleo. El agente analiza un CV en PDF, extrae habilidades clave mediante 
-                                <strong>LangChain</strong> y busca activamente ofertas compatibles en tiempo real. 
+                                Un sistema inteligente que automatiza la búsqueda de empleo mediante <strong>LangChain</strong> y <strong>LangGraph</strong>.
                             </p>
-                            
-                            <div class="bg-slate-900/50 p-4 rounded-lg mb-6 border border-slate-700">
-                                <h4 class="text-sm font-bold text-blue-400 mb-2 underline decoration-blue-500/30">The Roadmap:</h4>
-                                <ul class="text-sm text-slate-400 space-y-2">
-                                    <li><i class="fas fa-check-circle text-emerald-500 mr-2"></i><strong>CV Parsing:</strong> Extracción de texto y resumen ejecutivo (Python + PyPDF).</li>
-                                    <li><i class="fas fa-sync fa-spin text-blue-400 mr-2"></i><strong>Agent Orchestration:</strong> Implementación de <strong>LangGraph</strong> para manejar ciclos de búsqueda y filtrado.</li>
-                                    <li><i class="fas fa-clock text-slate-500 mr-2"></i><strong>LinkedIn Scraping & Export:</strong> Búsqueda automatizada y exportación a Excel/Sheets.</li>
-                                </ul>
-                            </div>
-
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-slate-800 px-3 py-1 rounded text-xs">LangGraph</span>
                                 <span class="bg-slate-800 px-3 py-1 rounded text-xs">GPT-4o-mini</span>
-                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">LinkedIn API</span>
-                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">Pandas/Excel</span>
+                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">FastAPI</span>
                             </div>
                         </div>
                     </div>
