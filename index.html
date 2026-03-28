@@ -24,11 +24,26 @@
         .btn-cv-inner:hover {
             background: transparent;
         }
+
+        .reveal {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+        .progress-bar {
+            transition: width 1.5s ease-in-out;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
 
-    <header class="max-w-5xl mx-auto pt-20 pb-10 px-6">
+    <header class="max-w-5xl mx-auto pt-20 pb-10 px-6 reveal">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
             
             <div class="flex justify-center md:justify-end">
@@ -72,7 +87,7 @@
 
     <main class="max-w-5xl mx-auto px-6 space-y-20 pb-20">
         
-        <section class="glass p-8 rounded-3xl border-l-4 border-emerald-500 shadow-2xl">
+        <section class="glass p-8 rounded-3xl border-l-4 border-emerald-500 shadow-2xl reveal">
             <h2 class="text-xl font-bold mb-4 text-emerald-400 uppercase tracking-wider flex items-center">
                 <i class="fas fa-user-astronaut mr-3"></i> About Me
             </h2>
@@ -86,7 +101,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="reveal">
             <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
                 <i class="fas fa-briefcase mr-3 text-blue-400"></i> Professional Experience
             </h2>
@@ -112,7 +127,7 @@
                 <div class="glass p-8 rounded-2xl border-l-4 border-slate-500 opacity-90 text-sm md:text-base">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-white">Full-Stack Developer</h3>
+                            <h3 class="text-2xl font-bold text-white">Software Engineer</h3>
                             <p class="text-slate-400 font-semibold text-lg">Director11</p>
                         </div>
                         <span class="text-slate-400 font-mono text-sm bg-slate-800 px-3 py-1 rounded-full mt-2 md:mt-0">Jun 2024 - Mar 2025</span>
@@ -126,7 +141,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="reveal">
             <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
                 <i class="fas fa-graduation-cap mr-3 text-emerald-400"></i> Education
             </h2>
@@ -164,7 +179,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="reveal">
             <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2">Technical Stack</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
@@ -207,7 +222,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="reveal">
             <div class="flex items-center justify-between mb-8 border-b border-slate-700 pb-2">
                 <h2 class="text-2xl font-bold">Featured Projects</h2>
                 <span class="text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 animate-pulse-slow font-mono">Currently Coding...</span>
@@ -223,13 +238,65 @@
                             <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">Agentic Workflow</span>
                             <h3 class="text-3xl font-bold mt-2 mb-4">AI Talent Scout & Job Matcher</h3>
                             <p class="text-slate-300 mb-6 leading-relaxed">
-                                Un sistema inteligente que automatiza la búsqueda de empleo mediante <strong>LangChain</strong> y <strong>LangGraph</strong>.
+                                An intelligent system that automates job searching and matching using <strong>GPT-4o</strong> to analyze requirements and profiles in real-time.
                             </p>
                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">LangChain</span>
                                 <span class="bg-slate-800 px-3 py-1 rounded text-xs">LangGraph</span>
-                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">GPT-4o-mini</span>
                                 <span class="bg-slate-800 px-3 py-1 rounded text-xs">FastAPI</span>
+                                <span class="bg-slate-800 px-3 py-1 rounded text-xs">Python</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 reveal">
+            <div>
+                <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
+                    <i class="fas fa-lightbulb mr-3 text-amber-400"></i> Soft Skills
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Problem Solving</span>
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Critical Thinking</span>
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Adaptability</span>
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Team Collaboration</span>
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Effective Communication</span>
+                    <span class="glass px-4 py-2 rounded-lg border border-slate-600 text-slate-300 hover:border-amber-400 transition-colors">Agile Mindset</span>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center">
+                    <i class="fas fa-language mr-3 text-blue-400"></i> Languages
+                </h2>
+                <div class="space-y-5">
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300 font-medium">Español</span>
+                            <span class="text-slate-500 font-mono text-xs">Nativo - C2</span>
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-emerald-500 to-emerald-400 h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300 font-medium">Inglés</span>
+                            <span class="text-slate-500 font-mono text-xs">Avanzado - C1</span>
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-300 font-medium">Alemán</span>
+                            <span class="text-slate-500 font-mono text-xs">Básico - A2</span>
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-slate-500 to-slate-400 h-2 rounded-full" style="width: 35%"></div>
                         </div>
                     </div>
                 </div>
@@ -241,5 +308,21 @@
         </footer>
     </main>
 
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100; // El elemento aparece 100px antes de entrar del todo
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Llamada inicial para los elementos que ya están en pantalla al cargar
+        reveal();
+    </script>
 </body>
 </html>
